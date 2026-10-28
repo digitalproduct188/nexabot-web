@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexabot.si | Smart Intelligence Telegram Automation</title>
+    <meta name="description" content="Custom AI Telegram Bots for 24/7 Customer Support, Lead Generation, and Sales Automation. Built in 48 hours.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        telegram: '#24A1DE',
+                        dark: '#0B0F19',
+                        card: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0B0F19;
+            color: #F9FAFB;
+        }
+        .glow-effect {
+            background: radial-gradient(circle at 50% 50%, rgba(36, 161, 222, 0.15) 0%, rgba(11, 15, 25, 0) 70%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-dark/80 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-sky-500/20">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white">Nexa<span class="text-sky-400">bot</span></span>
+                    <span class="text-xs font-semibold px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">.si</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#features" class="hover:text-sky-400 transition">Features</a>
+                <a href="#how-it-works" class="hover:text-sky-400 transition">How It Works</a>
+                <a href="#pricing" class="hover:text-sky-400 transition">Pricing</a>
+                <a href="#faq" class="hover:text-sky-400 transition">FAQ</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="https://t.me/@NexaPayBot" target="_blank" class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-5 py-2.5 rounded-xl transition shadow-lg shadow-sky-500/20 text-sm">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                <span>Live Demo</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden glow-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Copy -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                        <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                        .SI — Smart Intelligence Automation
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        Turn Your Telegram Into a <span class="gradient-text">24/7 Sales & Support</span> Machine.
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Stop losing leads to slow replies. We build custom AI-powered Telegram bots that answer questions, qualify clients, and close sales automatically—delivered in 48 hours with <strong class="text-white">zero monthly coding headaches</strong>.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-bold text-base shadow-xl shadow-sky-500/20 transition text-center">
+                            View Pricing Plans
+                        </a>
+                        <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gray-800/80 hover:bg-gray-800 border border-gray-700 text-white font-semibold text-base transition flex items-center justify-center gap-2">
+                            <span>Test Demo Bot</span>
+                            <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Trust Metrics -->
+                    <div class="mt-10 pt-8 border-t border-gray-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-bold text-white">&lt; 1 sec</p>
+                            <p class="text-xs text-gray-400">Response Time</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">48 Hrs</p>
+                            <p class="text-xs text-gray-400">Turnaround Delivery</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-sky-400">100%</p>
+                            <p class="text-xs text-gray-400">Custom Built</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Bot Simulator -->
+                <div class="lg:col-span-5">
+                    <div class="bg-card border border-gray-800 rounded-2xl shadow-2xl overflow-hidden max-w-md mx-auto">
+                        <!-- Telegram Header -->
+                        <div class="bg-gray-900 px-4 py-3.5 border-b border-gray-800 flex items-center gap-3">
+                            <div class="relative">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-white">
+                                    NB
+                                </div>
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-gray-900 rounded-full"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-white flex items-center gap-1">
+                                    NexaBot Assistant
+                                    <svg class="w-4 h-4 text-sky-400 fill-current" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                </h3>
+                                <p class="text-xs text-sky-400">bot • online 24/7</p>
+                            </div>
+                        </div>
+
+                        <!-- Chat Area -->
+                        <div id="chat-box" class="p-4 space-y-4 h-80 overflow-y-auto text-sm bg-[#0E1621]">
+                            <div class="flex items-start gap-2.5">
+                                <div class="bg-gray-800 text-gray-100 p-3 rounded-2xl rounded-tl-none max-w-[85%] shadow">
+                                    <p>👋 Welcome! I'm an AI Telegram Bot built by <strong>Nexabot.si</strong>.</p>
+                                    <p class="mt-1 text-gray-300">Click any button below to see how I handle your customers automatically:</p>
+                                    <span class="block text-[10px] text-gray-400 text-right mt-1">10:00 AM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Buttons -->
+                        <div class="p-3 bg-gray-900 border-t border-gray-800">
+                            <p class="text-[11px] text-gray-400 mb-2 text-center uppercase tracking-wider font-semibold">Try Interactive Demo Commands:</p>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="simulateChat('pricing')" class="bg-gray-800 hover:bg-sky-500/20 hover:border-sky-500/50 border border-gray-700 text-xs text-white py-2 px-3 rounded-lg transition text-left truncate">
+                                    💰 Check Pricing
+                                </button>
+                                <button onclick="simulateChat('book')" class="bg-gray-800 hover:bg-sky-500/20 hover:border-sky-500/50 border border-gray-700 text-xs text-white py-2 px-3 rounded-lg transition text-left truncate">
+                                    📅 Book a Demo Call
+                                </button>
+                                <button onclick="simulateChat('ai')" class="bg-gray-800 hover:bg-sky-500/20 hover:border-sky-500/50 border border-gray-700 text-xs text-white py-2 px-3 rounded-lg transition text-left truncate">
+                                    🤖 How AI Works?
+                                </button>
+                                <button onclick="simulateChat('human')" class="bg-gray-800 hover:bg-sky-500/20 hover:border-sky-500/50 border border-gray-700 text-xs text-white py-2 px-3 rounded-lg transition text-left truncate">
+                                    👨‍💻 Talk to Human
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Comparison Banner -->
+    <section class="py-10 bg-gray-900/60 border-y border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <div class="p-5 rounded-xl bg-red-500/5 border border-red-500/20 flex items-start gap-4">
+                    <div class="p-2.5 rounded-lg bg-red-500/10 text-red-400 font-bold text-xl">✕</div>
+                    <div>
+                        <h4 class="font-bold text-white text-base">Hiring a Support Agent: $1,200+ / month</h4>
+                        <p class="text-sm text-gray-400 mt-1">Works only 8 hours a day, takes sick leaves, slow replies during peak hours, and requires constant training.</p>
+                    </div>
+                </div>
+                <div class="p-5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex items-start gap-4">
+                    <div class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 font-bold text-xl">✓</div>
+                    <div>
+                        <h4 class="font-bold text-white text-base">NexaBot Automation: From $199 (One-Time)</h4>
+                        <p class="text-sm text-gray-400 mt-1">Works 24/7/365, replies in 0.5 seconds, handles 1,000+ chats simultaneously, and speaks multiple languages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Everything Your Business Needs on Telegram</h2>
+                <p class="text-gray-400 text-lg">Whether you run an E-commerce store, SaaS, Crypto community, or Coaching agency, we tailor the bot to your exact workflow.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-card border border-gray-800 p-7 rounded-2xl hover:border-sky-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-5 font-bold text-xl">
+                        ⚡
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Instant FAQ & Menus</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Interactive buttons and smart menus that answer 80% of repetitive customer questions without you lifting a finger.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-card border border-gray-800 p-7 rounded-2xl hover:border-sky-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-5 font-bold text-xl">
+                        🧠
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom AI Brain</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        We train the bot on your PDFs, website links, and product catalog so it responds naturally like your best salesperson.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-card border border-gray-800 p-7 rounded-2xl hover:border-sky-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5 font-bold text-xl">
+                        📊
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lead Capture & CRM Sync</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Automatically collect client names, emails, and phone numbers inside Telegram and push them straight to Google Sheets or your CRM.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-900/40 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Go Live in 3 Simple Steps</h2>
+                <p class="text-gray-400">No complex onboarding. We handle the technical setup from start to finish.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="relative p-6">
+                    <div class="w-14 h-14 rounded-full bg-sky-500 text-slate-950 font-extrabold text-xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-sky-500/30">1</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Share Your Info</h3>
+                    <p class="text-sm text-gray-400">Send us your FAQs, service details, or website link via Telegram after picking your package.</p>
+                </div>
+                <div class="relative p-6">
+                    <div class="w-14 h-14 rounded-full bg-sky-500 text-slate-950 font-extrabold text-xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-sky-500/30">2</div>
+                    <h3 class="text-lg font-bold text-white mb-2">We Build & Test (48h)</h3>
+                    <p class="text-sm text-gray-400">Our engineers design the conversation flow, connect the AI, and test every button thoroughly.</p>
+                </div>
+                <div class="relative p-6">
+                    <div class="w-14 h-14 rounded-full bg-sky-500 text-slate-950 font-extrabold text-xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-sky-500/30">3</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Launch & Automate</h3>
+                    <p class="text-sm text-gray-400">We transfer full ownership to your Telegram account and show you how to manage it effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-sky-400 font-semibold text-sm uppercase tracking-wider">Transparent Pricing</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">Pay Once. Automate Forever.</h2>
+                <p class="text-gray-400 text-lg">Choose the package that fits your business stage. No hidden subscription traps.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Tier 1: Starter ($199) -->
+                <div class="bg-card border border-gray-800 rounded-2xl p-8 flex flex-col justify-between hover:border-gray-700 transition">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Starter Bot</h3>
+                        <p class="text-sm text-gray-400 mt-1">Best for creators & small businesses needing 24/7 FAQ automation.</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-white">$199</span>
+                            <span class="text-sm text-gray-400"> / one-time setup</span>
+                        </div>
+                        <ul class="space-y-3.5 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="text-sky-400 font-bold">✓</span> Interactive Welcome Message
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-sky-400 font-bold">✓</span> Up to 15 Custom Menu Buttons & FAQs
+                            </li
